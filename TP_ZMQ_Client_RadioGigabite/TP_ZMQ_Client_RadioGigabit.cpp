@@ -25,7 +25,8 @@ int main(int argc, char* argv[])
     json client_message;
 
     client_message["timestamp"] = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
-    client_message["messageId"] = stoi(string(argv[1]));
+    if (argc > 1) client_message["messageId"] = stoi(string(argv[1]));
+    else client_message["messageId"] = 0;
 
     socket.send(buffer(to_string(client_message)), send_flags::none);
 
@@ -34,10 +35,11 @@ int main(int argc, char* argv[])
     socket.recv(reply, recv_flags::none);
     string request_str = reply.to_string();
     client_message = json::parse(request_str);
+    request_str = client_message["data"];
 
-    cout << "Received:\n" << to_string(client_message["data"]) << endl << endl;
+    cout << "Received:\n" << request_str << endl << endl;
 
-    cout << "Work with server complite." << endl;
+    cout << "Work with server completed." << endl;
 
     return 0;
 }
