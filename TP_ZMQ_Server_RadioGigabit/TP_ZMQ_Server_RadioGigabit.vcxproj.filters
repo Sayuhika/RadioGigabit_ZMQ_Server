@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TP_ZMQ_Server_RadioGigabite.cpp">
+    <ClCompile Include="TP_ZMQ_Server_RadioGigabit.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

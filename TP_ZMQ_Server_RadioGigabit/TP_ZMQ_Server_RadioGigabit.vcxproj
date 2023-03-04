@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3ff3e238-999f-49a9-ab1f-c240b8a91783}</ProjectGuid>
-    <RootNamespace>TPZMQClientRadioGigabite</RootNamespace>
+    <ProjectGuid>{7eb75bc3-f00f-4ebd-ad01-56868f786a77}</ProjectGuid>
+    <RootNamespace>TPZMQServerRadioGigabite</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>TP_ZMQ_Client_RadioGigabit</ProjectName>
+    <ProjectName>TP_ZMQ_Server_RadioGigabit</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -136,7 +136,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TP_ZMQ_Client_RadioGigabit.cpp" />
+    <ClCompile Include="TP_ZMQ_Server_RadioGigabit.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
