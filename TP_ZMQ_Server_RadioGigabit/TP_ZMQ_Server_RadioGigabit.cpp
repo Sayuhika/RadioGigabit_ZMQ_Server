@@ -1,7 +1,4 @@
-﻿// TP_ZMQ_Server_RadioGigabite.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
-#include <string>
+﻿#include <string>
 #include <chrono>
 #include <thread>
 #include <iostream>
